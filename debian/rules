@@ -16,14 +16,14 @@ NAME=libfslvpuwrap-1.0.46
 MD5=1f50110cb6de8ebf767fb9c5f8baf20d
 
 %:
-	dh $@ --sourcedirectory=$(NAME) --parallel
+	dh $@ --sourcedirectory=$(NAME)
 
 build:
 	find $(SOURCESDIR) -maxdepth 1 -iname "$(NAME).bin" -exec cp -v {} ./ \; || true
 	./fetch.sh $(NAME).bin $(MD5)
 	chmod +x $(NAME).bin
 	./$(NAME).bin --auto-accept --force
-	dh $@ --sourcedirectory=$(NAME) --parallel
+	dh $@ --sourcedirectory=$(NAME)
 
 clean:
 	rm -rf $(NAME) $(NAME).bin
