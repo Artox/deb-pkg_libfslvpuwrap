@@ -1,0 +1,23 @@
+Source: libfslvpuwrap
+Priority: extra
+Maintainer: unknown <unknown>
+Build-Depends: debhelper (>= 8.0.0), autoconf, automake, libtool, libvpu-imx6-dev
+Standards-Version: 3.9.3
+Section: libs
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Git: git://git.debian.org/collab-maint/libfslvpuwrap.git
+#Vcs-Browser: http://git.debian.org/?p=collab-maint/libfslvpuwrap.git;a=summary
+
+Package: libfslvpuwrap-dev
+Section: libdevel
+Architecture: any
+Depends: libfslvpuwrap (= ${binary:Version})
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
+
+Package: libfslvpuwrap
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>
