@@ -1,0 +1,4 @@
+addFilter("wrong-file-end-of-line-encoding")
+addFilter("shlib-policy-name-error")
+addFilter("shlib-policy-nonversioned-dir")
+addFilter("arch-dependent-file-in-usr-share")
