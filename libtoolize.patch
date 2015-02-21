@@ -1,0 +1,12 @@
+diff -Naur libfslvpuwrap-1.0.46.orig/autogen.sh libfslvpuwrap-1.0.46/autogen.sh
+--- libfslvpuwrap-1.0.46.orig/autogen.sh	2015-02-21 13:45:37.950933144 +0000
++++ libfslvpuwrap-1.0.46/autogen.sh	2015-02-21 13:46:06.331581284 +0000
+@@ -41,7 +41,7 @@
+ }
+ 
+ (grep "^AM_PROG_LIBTOOL" $srcdir/configure.ac >/dev/null) && {
+-  (libtool --version) < /dev/null > /dev/null 2>&1 || {
++  (libtoolize --version) < /dev/null > /dev/null 2>&1 || {
+     echo
+     echo "**Error**: You must have \`libtool' installed."
+     echo "You can get it from: ftp://ftp.gnu.org/pub/gnu/"

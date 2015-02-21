@@ -30,6 +30,7 @@ Summary: Freescale VPU wrapper
 Source: %{name}-%{version}.tar.gz
 Source1: libfslvpuwrap-1.0.46.bin
 Source10: rpmlintrc
+Patch0: libtoolize.patch
 BuildRequires: python
 BuildRequires: libvpu-imx6-devel
 BuildRequires: pkg-config
@@ -54,6 +55,8 @@ Provides development files for building against the VPU wrapper library for Free
 %setup -q
 chmod +x %{SOURCE1}
 %{SOURCE1} --auto-accept --force
+#%%patch0 -p1 -d libfslvpuwrap-1.0.46
+patch -d libfslvpuwrap-1.0.46 -p1 < %{PATCH0}
 
 %build
 cd libfslvpuwrap-1.0.46

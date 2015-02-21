@@ -23,6 +23,7 @@ build:
 	./fetch.sh $(NAME).bin $(MD5)
 	chmod +x $(NAME).bin
 	./$(NAME).bin --auto-accept --force
+	patch -d $(NAME) -Np1 < libtoolize.patch
 	dh $@ --sourcedirectory=$(NAME)
 
 clean:
