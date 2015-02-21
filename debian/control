@@ -1,7 +1,7 @@
 Source: libfslvpuwrap
 Priority: extra
 Maintainer: unknown <unknown>
-Build-Depends: debhelper (>= 8.0.0), autoconf, automake, libtool, libvpu-imx6-dev
+Build-Depends: debhelper (>= 8.0.0), autoconf, automake, libtool, pkg-config, libvpu-imx6-dev
 Standards-Version: 3.9.3
 Section: libs
 Homepage: <insert the upstream URL, if relevant>
