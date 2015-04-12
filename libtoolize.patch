@@ -1,6 +1,6 @@
-diff -Naur libfslvpuwrap-1.0.46.orig/autogen.sh libfslvpuwrap-1.0.46/autogen.sh
---- libfslvpuwrap-1.0.46.orig/autogen.sh	2015-02-21 13:45:37.950933144 +0000
-+++ libfslvpuwrap-1.0.46/autogen.sh	2015-02-21 13:46:06.331581284 +0000
+diff -Naur libfslvpuwrap-1.0.58.orig/autogen.sh libfslvpuwrap-1.0.58/autogen.sh
+--- libfslvpuwrap-1.0.58.orig/autogen.sh	2015-04-12 13:23:32.384489092 +0200
++++ libfslvpuwrap-1.0.58/autogen.sh	2015-04-12 13:23:39.500993184 +0200
 @@ -41,7 +41,7 @@
  }
  

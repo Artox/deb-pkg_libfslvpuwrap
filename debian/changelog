@@ -1,3 +1,9 @@
+libfslvpuwrap (1.0.58) stable; urgency=low
+
+  * initial release
+
+ -- Josua Mayer <privacy@not.given>  Sun, 12 Apr 2015 13:26:14 +0200
+
 libfslvpuwrap (1.0.46) unstable; urgency=low
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>

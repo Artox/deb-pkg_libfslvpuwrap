@@ -10,16 +10,16 @@
 #export DH_VERBOSE=1
 
 # hack: will only work on OBS-created chroots
-SOURCESDIR=/usr/src/packages/SOURCES/
+SOURCESDIR=/usr/src/packages/SOURCES/ ~
 
-NAME=libfslvpuwrap-1.0.46
-MD5=1f50110cb6de8ebf767fb9c5f8baf20d
+NAME=libfslvpuwrap-1.0.58
+MD5=bf4960ab18e6bb59e98aae797b80cd7f
 
 %:
 	dh $@ --sourcedirectory=$(NAME)
 
 build:
-	find $(SOURCESDIR) -maxdepth 1 -iname "$(NAME).bin" -exec cp -v {} ./ \; || true
+	find $(SOURCESDIR) -maxdepth 1 -iname "$(NAME).bin" -exec cp -v {} ./ \; -quit || true
 	./fetch.sh $(NAME).bin $(MD5)
 	chmod +x $(NAME).bin
 	./$(NAME).bin --auto-accept --force
