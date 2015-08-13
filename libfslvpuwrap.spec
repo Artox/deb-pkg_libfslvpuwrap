@@ -32,7 +32,7 @@ Source1: libfslvpuwrap-%{version}.bin
 Source10: rpmlintrc
 Patch0: libtoolize.patch
 BuildRequires: python
-BuildRequires: libvpu-imx6-devel
+BuildRequires: libvpu-imx6-devel >= 5.4.28
 BuildRequires: pkg-config
 
 %description

@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 8.0.0),
  automake,
  libtool,
  pkg-config,
- libvpu-imx6-dev (= 5.4.28)
+ libvpu-imx6-dev (>= 5.4.28)
 Standards-Version: 3.9.3
 Section: libs
 Homepage: <insert the upstream URL, if relevant>
