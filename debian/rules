@@ -32,4 +32,4 @@ clean:
 
 override_dh_auto_configure:
 	cd $(NAME); NOCONFIGURE=1 ./autogen.sh; cd ..
-	dh_auto_configure
+	dh_auto_configure -- --libdir=/usr/lib/$(DEB_BUILD_MULTIARCH)
