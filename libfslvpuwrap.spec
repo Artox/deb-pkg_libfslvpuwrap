@@ -22,7 +22,7 @@
 # THE SOFTWARE.
 
 Name: libfslvpuwrap
-Version: 1.0.58
+Version: 1.0.61
 Release: 1
 License: Freescale IP
 Group: Productivity/Multimedia/Other
@@ -30,7 +30,6 @@ Summary: Freescale VPU wrapper
 Source: %{name}-%{version}.tar.gz
 Source1: libfslvpuwrap-%{version}.bin
 Source10: rpmlintrc
-Patch0: libtoolize.patch
 BuildRequires: python
 BuildRequires: libvpu-imx6-devel >= 5.4.28
 BuildRequires: pkg-config
@@ -55,8 +54,7 @@ Provides development files for building against the VPU wrapper library for Free
 %setup -q
 chmod +x %{SOURCE1}
 %{SOURCE1} --auto-accept --force
-#%%patch0 -p1 -d libfslvpuwrap-1.0.46
-patch -d libfslvpuwrap-%{version} -p1 < %{PATCH0}
+patch -d libfslvpuwrap-%{version} -Np1 < libtoolize.patch
 
 %build
 cd libfslvpuwrap-%{version}
@@ -71,7 +69,7 @@ cd libfslvpuwrap-%{version}
 %defattr(-,root,root)
 /usr/lib/*.so.*
 /usr/share/doc/libfslvpuwrap
-%doc libfslvpuwrap-%{version}/EULA.txt
+%doc libfslvpuwrap-%{version}/COPYING
 
 %files devel
 %defattr(-,root,root)
