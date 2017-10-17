@@ -1,3 +1,9 @@
+libfslvpuwrap (1.0.68) UNRELEASED; urgency=medium
+
+  * Freescale update
+
+ -- Josua Mayer <josua.mayer97@gmail.com>  Tue, 17 Oct 2017 10:44:04 +0200
+
 libfslvpuwrap (1.0.61) stable; urgency=low
 
   * initial release

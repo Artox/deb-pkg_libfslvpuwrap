@@ -12,8 +12,8 @@
 # hack: will only work on OBS-created chroots
 SOURCESDIR=/usr/src/packages/SOURCES/ ~
 
-NAME=libfslvpuwrap-1.0.61
-MD5=313c0e709f53b565270070e4206e0fa8
+NAME=imx-vpuwrap-1.0.68
+MD5=af5a6b93ff24fdb4bf1a31d6e831f526
 
 %:
 	dh $@ --sourcedirectory=$(NAME)
